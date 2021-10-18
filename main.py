@@ -184,13 +184,13 @@ while True:
 			break
 
 		
-	#Move the bullet
+	
 	if bulletstate == "fire":
 		y = bullet.ycor()
 		y += bulletspeed
 		bullet.sety(y)
 	
-	#Check to see if the bullet has gone to the top
+	
 	if bullet.ycor() > 275:
 		bullet.hideturtle()
 		bulletstate = "ready"
